@@ -1,7 +1,7 @@
 .header{
     display:flex;
     justify-content: space-between;
-    height: 2.5rem;
+    height: 4rem;
     align-items: center;
 }
 
@@ -16,9 +16,10 @@
     display: flex;
     gap: 2.5rem; 
     color: white; 
+    font-family: 'Poppins', sans-serif;
 }
 
-.header-menu>li{
+.header-menu>li{ 
     cursor: pointer;
 }
 
