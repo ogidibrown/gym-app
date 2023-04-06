@@ -137,16 +137,49 @@
 
 .hero-image{
     position: absolute;
-    top: 10rem;
-    right: 8rem;
+    top: 18rem;
+    right: 10rem;
     width: 23rem;
 }
 
 .hero-image-back{
     position: absolute;
-    top: 1rem;
+    top: 5rem;
     right: 2rem;
     z-index: -1;
-    width: 30rem;
+    width: 32rem;
+    height: 560px;
     
+}
+
+.calimg{
+    height: 90px;
+    width: 90px;
+}
+
+.calories{
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 36rem;
+    right: 25rem;
+}
+
+.calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>div>:nth-child(1){
+    color: var(--gray);
+}
+
+.calories>div>:nth-child(2){
+    color: white;
+    font-size: 1.5em;
 }

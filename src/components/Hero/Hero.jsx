@@ -3,6 +3,9 @@ import './Hero.css'
 import HeroImg from '../../img/hero.png'
 import Heart from '../../img/heart.png'
 import ImageBack from '../../img/hero-img-back.png'
+import Calories from '../../img/calories.png'
+
+
 
 const Hero = () => {
   return (
@@ -61,6 +64,13 @@ const Hero = () => {
 
           <img src={HeroImg} alt="" className='hero-image'/>
           <img src={ImageBack} alt="" className='hero-image-back'/>
+          <div className="calories">
+            <img src={Calories} alt="" className='calimg'/>
+            <div>
+            <span>Calories Burned</span>
+            <span>220 kcal</span>
+            </div>
+          </div>
         </div>
 
     </div>
