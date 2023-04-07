@@ -7,7 +7,9 @@
     --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
     --appColor: #3c3f45;
 }
-
+*{
+    margin: 0px;
+}
 .App {
     /* background-image: url('./img/desktop-wallpaper-high-resolution-purple-gradient-background-minimalist-gradient.jpg'); */
     mix-blend-mode: overlay;
@@ -36,6 +38,7 @@
     font-weight: bold;
     border: 4px solid transparent;
     transition: 300ms all;
+    cursor: pointer;
 }
 
 

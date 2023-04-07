@@ -64,6 +64,8 @@
     text-transform: none;
     letter-spacing: 1px;
     width: 80%;
+    font-family: 'Poppins', sans-serif;
+
 }
 .figures{
     display: flex;
@@ -96,11 +98,24 @@
     width: 8rem;
 }
 
+.hero-buttons>:nth-child(1):hover{
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+}
+
 .hero-buttons>:nth-child(2){
     color: white;
     background-color: transparent;
     width: 8rem;
     border: 2px solid var(--orange);
+} 
+
+.hero-buttons>:nth-child(2):hover{
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
 } 
 .right-h>.btn{
     position: absolute;
