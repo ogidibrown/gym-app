@@ -64,12 +64,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.tick{
-    width: 30px;
-    height: 30px;
-    margin-bottom: 0px;
-    
-}
+
 .details-r{
  display: flex;
  flex-direction: column;
@@ -77,3 +72,23 @@
 
 }
 
+.details-r>div{
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.details-r>div>img{
+    width: 2rem;
+    height: 2rem;
+}
+.partners{
+    display: flex;
+    
+   
+}
+
+.partners>img{
+width: 2.5rem;
+
+}
