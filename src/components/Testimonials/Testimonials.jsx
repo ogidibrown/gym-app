@@ -3,12 +3,13 @@ import { testimonialsData } from '../../Data/testimonialsData'
 import './Testimonials.css'
 import LeftArrow from '../../img/left-arrow.png'
 import RightArrow from '../../img/right-arrow.png'
-
+import {motion} from 'framer-motion';
 
 const Testimonials = () => {
 const [select, setSelect] = useState(0);
 const tLength = testimonialsData.length;
 
+const transition = {type:"spring", duration:3}
 
 
   return (
@@ -17,9 +18,9 @@ const tLength = testimonialsData.length;
             <span>Testimonials</span>
             <span className='stroke-text'>What they</span>
             <span>say about us</span>
-            <span>
+            <motion.span key={select} initial={{opacity:0, x:-100}} animate={{opacity:1, x:0}} exit={{opacity:0, x:100}} transition={transition}>
                 {testimonialsData[select].review}
-            </span>
+            </motion.span>
             <span>
                 <span style={{color:"var(--orange)"}}>
                 {testimonialsData[select].name}
@@ -28,9 +29,13 @@ const tLength = testimonialsData.length;
             </span>
         </div>
         <div className="right-t">
-            <div></div>
-            <div></div>
-            <img src={testimonialsData[select].image} alt="" />
+            <motion.div initial={{opacity:0, x:-100}} whileInView={{opacity:1, x:0}} transition={{...transition, duration:2}}>   
+            </motion.div>
+
+            <motion.div initial={{opacity:0, x:100}} whileInView={{opacity:1, x:0}} transition={{...transition, duration:2}}>
+            </motion.div>
+            <motion.img src={testimonialsData[select].image} alt="" 
+            key={select} initial={{opacity:0, x:100}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-100}} transition={transition}/>
             <div className="arrows">
                 <img 
                 onClick={()=>{
