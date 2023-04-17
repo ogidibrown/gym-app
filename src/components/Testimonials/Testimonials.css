@@ -75,3 +75,44 @@ top: 2rem;
     
 
 }
+
+@media screen and (max-width: 768px){
+    .testimonials{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-t >:nth-child(2), .left-t> :nth-child(3){
+        font-size: xx-large;
+    }
+
+    .right-t{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-t >div{
+        display: none;
+        position: relative;
+
+    }
+
+    .right-t >img{
+        top: 0;
+        right: 0;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-t>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+        
+    }
+    
+}
