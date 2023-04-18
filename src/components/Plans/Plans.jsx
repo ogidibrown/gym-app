@@ -4,7 +4,7 @@ import Wtick from '../../img/wtick.png'
 
 const Plans = () => {
   return (
-<div className="plans-container">
+<div className="plans-container" id='plan'>
     <div className="blur plans-blur-1"></div>
     <div className="blur plans-blur-2"></div>
 
